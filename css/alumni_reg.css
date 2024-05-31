@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500&display=swap');
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  .mynav
+  {
+    background: #373B44;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  a{
+font-family:Nunito;
+font-weight: 500;
+color:white;
+  }
+  .mynav ul
+  {
+font-family:Nunito;
+font-weight: 500;
+  }
+.container {
+    width: 80%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+form {
+    max-width: 600px;
+    margin: 20px auto;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.filechooser
+{
+    width: 50%;
+    padding: 10px;
+}
+#profile-pic-container {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+}
+#profile-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#file-input {
+    display: none;
+}
+#file-label {
+  text-align: center;
+    cursor: pointer;
+    padding: 8px;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    margin: auto;
+    width:110px;
+}
+.form-control:focus {
+  box-shadow: none;
+  border-color: #276bff
+}
+
+.profile-button {
+  background-color: #3498db;
+  color: #fff;
+  box-shadow: none;
+  border: none;
+  padding: 8px;
+}
+

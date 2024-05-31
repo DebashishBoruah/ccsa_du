@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500&display=swap');
+body {
+    background-color: #f8f9fa;
+    font-family: 'Nunito', sans-serif;
+  }
+.mynav
+  {
+background: #373B44;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  a{
+font-family:Nunito;
+font-weight: 500;
+color:white;
+  }
+  .mynav ul
+  {
+font-family:Nunito;
+font-weight: 500;
+  }
+  .Chairperson
+  {
+    padding-top: 70px;
+    /* padding-left:180px;
+    padding-right: 180px; */
+    padding-bottom: 70px;
+  }
+  .mycard
+  {
+    border:0;
+margin: auto;
+overflow: hidden;
+  border-radius: 50%;
+  width: 250px; /* Adjust the width and height as needed */
+  height: 250px;
+  }
+  .profile_img
+  {
+    width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the entire container */
+  border-radius: 50%;
+  }
+  .otherfaculties
+  {
+    padding-top:30px;
+    margin: auto;
+  }
+  .custom-card {
+    border: none; /* Hide the default border */
+    transition: box-shadow 0.3s; /* Add smooth transition on hover */
+    border-radius: 10px;
+    width:13rem;
+    height:290px;
+  }
+  .custom-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Additional styling for better aesthetics */
+  .fac_img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width:13rem;
+    height:220px;
+  }
+  .card-body {
+    padding: 1.25rem;
+  }
+
+  .card-title {
+    font-size: 1rem; /* Reduce font size */
+    margin-bottom: 0.25rem; /* Reduce margin-bottom */
+  }
+
+  .card-text {
+    color: #555;
+  }
+  .nonfaculties
+  {
+    padding-bottom:50px;
+    margin: auto;
+  }

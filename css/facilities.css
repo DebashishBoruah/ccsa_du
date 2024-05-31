@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500&display=swap');
+body {
+    background-color: #f8f9fa;
+    font-family: 'Nunito', sans-serif;
+  }
+  .mynav
+  {
+    background: #373B44;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  a{
+font-family:Nunito;
+font-weight: 500;
+color:white;
+  }
+  .mynav ul
+  {
+font-family:Nunito;
+font-weight: 500;
+  }
+.facilities h2
+{
+font-weight: 600;
+}
+.allfacilities
+{
+   padding-top:40px;
+}
+.labs b{
+    font-weight:bold;
+}
+.header 
+{
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('../photos/library_download.jpg');
+  background-size: cover;
+  color: #ffffff;
+  padding: 150px 0;
+  text-align: center;
+}
+.header h1{
+font-size: 44px;
+font-weight: 400;
+text-transform: uppercase;
+line-height: 1.5;
+}
+.gallery-container {
+  overflow-x: auto;
+    width: 100%; /* Adjust the width of the gallery container as needed */
+  
+  }
+
+  .gallery {
+    display: flex;
+  }
+      
+  .gallery-container::-webkit-scrollbar {
+  display: none; 
+  }
+  .gallery img {
+    width: 250px; /* Set the width of the images as needed */
+    height: auto;
+    margin-right: 10px; /* Adjust the margin between images as needed */
+  }
+.facilities_lab h3
+{
+font-weight: bold;
+}
+p
+{
+  color: #313030;
+  font-size: 18px;
+  letter-spacing: 0.02cm;
+}
+.facilities_lab p b{
+font-size: 20px;
+font-weight: bold;
+}
+.library
+{
+  padding-top: 130px;
+  /* padding-left:180px;
+  padding-right: 180px; */
+  padding-bottom: 130px;
+ background-color: black;
+}
+.library h3{
+  color: white;
+  padding-bottom:10px;
+}
+.library p{
+  color: #b5b1b1;
+  font-size: 18px;
+  letter-spacing: 0.02cm;
+}
+.book_search
+{
+  padding-top: 130px;
+  /* padding-left:180px;
+  padding-right: 180px; */
+  padding-bottom: 130px;
+}
+.search{
+height: 45px;
+}
+.th .td
+{
+  font-size: 18px;
+  letter-spacing: 0.02cm;
+}
+.research
+{
+  padding-top:70px;
+  /* padding-left:180px;
+  padding-right: 180px; */
+  padding-bottom: 70px;
+}
+.research_txt p
+{
+  font-size: 18px;
+  letter-spacing: 0.02cm;
+}
+b{
+  font-weight: bolder;
+}
+.links-p p
+{
+  color:rgb(185, 173, 173)
+}
+.links-p a
+{
+  color:rgb(185, 173, 173)
+}

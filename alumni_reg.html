@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCSA: Alumni Registration</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="./css/alumni_reg.css">
+    <style>
+      .login_btn
+      {
+        color:white;
+      }
+      .login_btn:hover
+      {
+        color:white;
+        
+      }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark mynav">
+    <a class="navbar-brand" href="./index.html">CENTRE FOR COMPUTER SCIENCE AND APPLICATIONS</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./notice.html">Notice</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./facilities.html">Facilities</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./faculties.html">Faculties</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Alumni
+              </a>
+              <ul class="dropdown-menu dropdown-menu-scroll">
+                <li><a class="dropdown-item" href="./alumni_reg.html">Alumni Registration</a></li>
+                <li><a class="dropdown-item" href="./alumni_view.html">Alumni Profiles</a></li>
+              </ul>
+          </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    AICTE
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">EOA Report</a></li>
+                    <li><a class="dropdown-item" href="#">EOA Report</a></li>
+                    <li><a class="dropdown-item" href="#">EOA Report</a></li>
+                    <li><a class="dropdown-item" href="#">EOA Report</a></li>
+                    <li><a class="dropdown-item" href="#">EOA Report</a></li>
+                </ul>
+            </li>
+        </ul>
+        <button type="button" class="btn btn-primary"><a href="./login.html">Log in</a></button>
+    </div>
+  </nav>
+    <!-- <div class="container">
+        <h1>Student Information Form</h1>
+        <form action="submit_student.php" method="post" enctype="multipart/form-data">
+            <div id="profile-pic-container">
+                <img id="profile-pic" src="./photos/profile.png" alt="Profile Picture">
+            </div>
+            <br>
+            <label for="file-input" id="file-label">Choose File</label>
+            <input type="file" id="file-input" accept="image/*" class="filechooser">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="batch">Batch:</label>
+            <input type="text" id="batch" name="batch" required>
+
+            <label for="occupation">Current Occupation:</label>
+            <input type="text" id="occupation" name="occupation" required>
+
+            <label for="course">Course:</label>
+            <select id="course" name="course" required>
+                <option value="computer_science">MCA</option>
+                <option value="engineering">BCA</option>
+                <option value="business_admin">PGDCA</option>
+            </select>
+
+            <button type="submit" class="btn-primary">Submit</button>
+        </form>
+    </div> -->
+    <div class="container bg-white mt-5 mb-5">
+        <div class="row">
+            <div class="col-md-4 border-right py-5">
+                <div id="profile-pic-container">
+                    <img id="profile-pic" src="./photos/profile.png" alt="Profile Picture">
+                </div>
+                <br>
+                    <label for="file-input" id="file-label">Choose File</label>
+                    <input type="file" id="file-input" accept="image/*" class="filechooser">
+            </div>
+            <div class="col-md-8">
+                <div class="p-3 py-5">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h4 class="text-right">Alumni Registration Form</h4>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-6"><label class="labels">Name</label><input type="text" class="form-control" placeholder="first name" value=""></div>
+                        <div class="col-md-6"><label class="labels">Surname</label><input type="text" class="form-control" value="" placeholder="surname"></div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-6"><label class="labels">Batch</label><input type="text" class="form-control" placeholder="Enter your batch year" value=""></div>
+                        <div class="col-md-6"><label class="labels">Current Occupation</label><input type="text" class="form-control" placeholder="education" value=""></div>
+                        <div class="col-md-6">
+                            <label class="labels">Couurse</label>
+                            <select id="course" name="course" class="form-control" required>
+                            <option value="computer_science">MCA</option>
+                            <option value="engineering">BCA</option>
+                            <option value="business_admin">PGDCA</option>
+                            <!-- Add more options as needed -->
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="labels">Email Id</label>
+                        <input type="text" class="form-control" placeholder="Enter your email" value="">
+                    </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-6"><label class="labels">Facebook URL</label><input type="text" class="form-control" placeholder="Facebook URL" value=""></div>
+                        <div class="col-md-6"><label class="labels">Linked</label><input type="text" class="form-control" value="" placeholder="Linkedin URL"></div>
+                    </div>
+                    <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="button">Save Profile</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer
+            class="text-center text-lg-start text-white"
+            style="background-color: #1c2331"
+            >
+      <!-- Section: Social media -->
+      <section
+               class="d-flex justify-content-between p-4"
+               style="background-color: #1755bf"
+               >
+        <!-- Left -->
+        <div class="me-5">
+          <span>Get connected with us on social networks:</span>
+        </div>
+        <!-- Left -->
+  
+        <!-- Right -->
+        <div>
+          <a href="" class="text-white mx-3">
+            <i class="fab fa-facebook-f fa-lg"></i>
+          </a>
+          <a href="" class="text-white mx-3">
+            <i class="fab fa-twitter fa-lg"></i>
+          </a>
+          <a href="" class="text-white mx-3">
+            <i class="fab fa-instagram fa-lg"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+  
+      <!-- Section: Links  -->
+      <section class="links-p">
+        <div class="container-fluid text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold">Centre for Computer Science and Application</h6>
+              <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color:#1755bf ;height: 2px"
+                  />
+<p>Designed and Devloped by: Debashish Boruah and Aditya Kr Gogoi</p>
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">Quick Links</h6>
+              <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #1755bf; height: 2px"
+                  />
+                  <p>
+                    <a href="#!">Fee Structure</a>
+                  </p>
+                  <p>
+                    <a href="#!">Student List</a>
+                  </p>
+                  <p>
+                    <a href="#!">BOM Committee</a>
+                  </p>
+                 
+                </div>
+                <!-- Grid column -->
+                
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2  mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold">Download</h6>
+                  <hr
+                      class="mb-4 mt-0 d-inline-block "
+                      style="width: 60px; background-color:#1755bf; height: 2px"
+                      />
+                  <p>
+                    <a href="#!">Syllabus MCA</a>
+                  </p>
+                  <p>
+                    <a href="#!">Syllabus MCA(old)</a>
+                  </p>
+                  <p>
+                    <a href="#!">SYllabus BCA</a>
+                  </p>
+                  <p>
+                    <a href="#!">Syllabus PGDCA</a>
+                  </p>
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">Contact</h6>
+              <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color:#1755bf; height: 2px"
+                  />
+              <p><i class="fas fa-home mr-3"></i>Centre for Computer Science and Apllications</p>
+             <p><i class="fas fa-address-card mr-3"></i> Dibrugarh, Assam, Pin-786004</p>
+              <p><i class="fas fa-envelope mr-3"></i>ccsduoffice@gmail.com</p>
+              <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+  
+      <!-- Copyright -->
+      <div
+           class="text-center p-3"
+           style="background-color: rgba(0, 0, 0, 0.2);color:rgb(185, 173, 173);"
+           >
+        © 2023 Copyright: Centre for Computer Science and Applications
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <script>
+            let profile_pic = document.getElementById('profile-pic');
+        let inputfile = document.getElementById('file-input');
+inputfile.onchange=function()
+{
+    profile_pic.src= URL.createObjectURL(inputfile.files[0])
+}
+        if (file) {
+            const reader = new FileReader();
+
+            reader.onload = function (e) {
+                previewImg.src = e.target.result;
+            };
+
+            reader.readAsDataURL(file);
+        } else {
+            alert('Please select a file.');
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        AOS.init();
+        // JavaScript to handle dynamic brand name replacement
+        window.addEventListener('resize', function () {
+          var navbarBrand = document.querySelector('.navbar-brand');
+          var longBrandName = "CENTRE FOR COMPUTER SCIENCE AND APPLICATIONS";
+          var shortBrandName = "CCSA";
+    
+          // Replace with short name if the width is below a certain threshold
+          if (window.innerWidth < 768) {
+            navbarBrand.textContent = shortBrandName;
+          } else {
+            navbarBrand.textContent = longBrandName;
+          }
+        });
+      </script>
+</body>
+</html>

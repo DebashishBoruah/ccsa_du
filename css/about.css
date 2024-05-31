@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500&display=swap');
+body {
+    background-color: #f8f9fa;
+    font-family: 'Nunito', sans-serif;
+  }
+  .mynav
+  {
+    background: #373B44;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  a{
+font-family:Nunito;
+font-weight: 500;
+color:white;
+  }
+  .mynav ul
+  {
+font-family:Nunito;
+font-weight: 500;
+  }
+  .header 
+  {
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('../photos/alumni.jpeg');
+    background-size: cover;
+    color: #ffffff;
+    padding: 150px 0;
+    text-align: center;
+  }
+.header h1{
+font-size: 44px;
+font-weight: 400;
+text-transform: uppercase;
+line-height: 1.5;
+  }
+.aboutccsa{
+    padding-top: 130px;
+    /* padding-left:180px;
+    padding-right: 180px; */
+    padding-bottom: 130px;
+  }
+  .aboutccsa p{
+    font-size: 18px;
+    color: rgb(87, 88, 91);
+    letter-spacing: 0.02cm;
+  }
+  .ourvlaue
+  {
+    padding-top: 130px;
+    /* padding-left:180px;
+    padding-right: 180px; */
+    padding-bottom: 130px;
+   background-color: black;
+  }
+.our-value-txt h2{
+    color: white;
+    padding-bottom: 40px;
+}
+.our-value-txt p{
+    color: #908989;
+    font-size: 18px;
+    letter-spacing: 0.02cm;
+}
+.extra-about
+{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.my-card
+{
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+.my-card img{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.my-card:hover
+{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.links-p p
+{
+  color:rgb(185, 173, 173)
+}
+.links-p a
+{
+  color:rgb(185, 173, 173)
+}

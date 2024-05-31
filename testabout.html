@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Cards</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color: #f8f9fa;
+}
+.container {
+margin-top: 50px;
+}
+
+.card {
+transition: transform 0.2s;
+}
+
+ .card:hover {
+transform: scale(1.05);
+}
+
+.modal-content {
+background-color: #f8f9fa;
+}
+
+.modal-header {
+border-bottom: 1px solid #dee2e6;
+background-color: #007bff;
+color: #fff;
+}
+
+.modal-footer {
+border-top: 1px solid #dee2e6;
+background-color: #f8f9fa;
+}
+    </style>
+</head>
+<body>
+<div class="container">
+        <h2 class="text-center mb-4">Alumni Directory</h2>
+
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 18rem;" data-toggle="modal" data-target="#alumniModal1">
+                    <img src="rizuwan-2.jpg" class="card-img-top" alt="Alumni 1">
+                    <div class="card-body">
+                        <h5 class="card-title">John Doe</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 18rem;" data-toggle="modal" data-target="#alumniModal2">
+                    <img src="rizuwan-2.jpg" class="card-img-top" alt="Alumni 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Jane Smith</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more alumni cards as needed -->
+        </div>
+    </div>
+
+    <!-- Alumni Modal 1 -->
+    <div class="modal fade" id="alumniModal1" tabindex="-1" role="dialog" aria-labelledby="alumniModalLabel1" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="alumniModalLabel1">Alumni Details - John Doe</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="rizuwan-2.jpg" class="img-fluid mb-3" alt="Alumni 1">
+                    <p><strong>Name:</strong> John Doe</p>
+                    <p><strong>Batch:</strong> Batch 1</p>
+                    <p><strong>Current Occupation:</strong> Software Engineer</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Alumni Modal 2 -->
+    <div class="modal fade" id="alumniModal2" tabindex="-1" role="dialog" aria-labelledby="alumniModalLabel2" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="alumniModalLabel2">Alumni Details - Jane Smith</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="rizuwan-2.jpg" class="img-fluid mb-3" alt="Alumni 2">
+                    <p><strong>Name:</strong> Jane Smith</p>
+                    <p><strong>Batch:</strong> Batch 2</p>
+                    <p><strong>Current Occupation:</strong> Marketing Specialist</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
